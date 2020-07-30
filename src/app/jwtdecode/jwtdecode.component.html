@@ -3,7 +3,7 @@
     <div class="card-header">
       Enter token below:
     </div>
-    <div id="jwtToken" #jwtToken contenteditable="plaintext-only" spellcheck="false" (keyup)="tokenChanged()" class="tokenBody">
+    <div id="jwtToken" #jwtToken contenteditable="plaintext-only" spellcheck="false" (input)="tokenChanged()" class="tokenBody">
     </div>
 
   </div>
@@ -21,7 +21,7 @@
 
       <span *ngIf="decodedData[0]" class="decoded header" style="white-space: pre-wrap;">{{decodedData[0]}}.</span>
       <span *ngIf="decodedData[1]" class="decoded payload">{{decodedData[1]}}.</span>
-      <span class="decoded signature">[Signature]</span>
+      <span *ngIf="decodedData[1]" class="decoded signature">[Signature]</span>
 
 
     </div>
