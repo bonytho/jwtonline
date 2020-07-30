@@ -1,10 +1,11 @@
 .tokenBody {
-  min-height: 150px;
+  min-height: 100px;
   padding: 15px;
   height: auto;
 
   overflow-wrap: break-word;
   outline: none;
+  font-family: monospace;
 }
 
 .card {
@@ -14,4 +15,25 @@
 #myTabContent {
   border: 1px solid #dee2e6;
   min-height: 300px;
+}
+
+.decoded {
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+
+.header {
+  color: #b00;
+}
+
+.payload {
+  color: #00b;
+}
+
+.signature {
+  color: #090;
+}
+
+.tab-pane {
+  padding: 15px;
 }
